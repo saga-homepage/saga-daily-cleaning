@@ -352,6 +352,48 @@
       font-size:14px;
     }
 
+
+    .price-box{
+      max-width:760px;
+      margin:0 auto;
+      padding:38px 30px;
+      background:#fff;
+      border:2px solid #dceff5;
+      border-radius:26px;
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+
+    .price-label{
+      display:inline-block;
+      margin-bottom:14px;
+      padding:6px 15px;
+      border-radius:999px;
+      background:var(--light);
+      color:var(--main-dark);
+      font-size:14px;
+      font-weight:800;
+    }
+
+    .price-main{
+      margin:0;
+      color:var(--deep);
+      font-size:clamp(28px,4vw,42px);
+      font-weight:900;
+      line-height:1.4;
+    }
+
+    .price-main strong{
+      color:var(--main-dark);
+      font-size:1.18em;
+    }
+
+    .price-note{
+      margin:16px 0 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
     .place-card{
       text-align:center;
       padding:24px 18px;
@@ -488,6 +530,7 @@
       <nav>
         <a href="#service">清掃内容</a>
         <a href="#frequency">清掃頻度</a>
+        <a href="#price">料金</a>
         <a href="#flow">ご利用の流れ</a>
         <a class="header-cta" href="#contact">お問い合わせ</a>
       </nav>
@@ -629,7 +672,24 @@
       </div>
     </section>
 
-    <section class="section-light">
+
+    <section id="price" class="section-light">
+      <div class="container">
+        <div class="section-head">
+          <span class="mini">Price</span>
+          <h2>料金の目安</h2>
+          <p>清掃内容やご希望の頻度に合わせて、お見積りいたします。</p>
+        </div>
+
+        <div class="price-box">
+          <span class="price-label">日常清掃の料金目安</span>
+          <p class="price-main">1時間 <strong>2,500円</strong>（税別）＋ 出張費～</p>
+          <p class="price-note">※作業内容・作業時間・場所により料金は異なります。詳しい金額は、作業内容を確認後にご案内いたします。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <div class="container">
         <div class="section-head">
           <span class="mini">Places</span>
