@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>日常清掃サービス｜株式会社SAGA</title>
-  <meta name="description" content="毎日・週1回・2週間ごとなど、ご希望の頻度に合わせて日常清掃を承ります。トイレ、床、共用部など、日常的なお掃除は株式会社SAGAにおまかせください。">
+  <title>病院・クリニックの日常清掃｜株式会社SAGA</title>
+  <meta name="description" content="病院・クリニック向けの日常清掃サービス。毎日・週1回・2週間ごとなど、ご希望の頻度に合わせて、待合室・トイレ・床・洗面など院内の日常清掃を承ります。">
   <style>
     :root{
       --main:#58b7d9;
@@ -394,6 +394,16 @@
       font-size:14px;
     }
 
+    .price-process{
+      margin:24px 0 0;
+      padding:18px 20px;
+      border-radius:18px;
+      background:var(--light);
+      color:var(--deep);
+      font-weight:700;
+      line-height:1.8;
+    }
+
     .place-card{
       text-align:center;
       padding:24px 18px;
@@ -475,6 +485,37 @@
       font-weight:700;
     }
 
+
+    .contact-actions{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+      margin-top:26px;
+    }
+
+    .contact-method{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      min-height:150px;
+      padding:22px 18px;
+      border-radius:22px;
+      border:1px solid #d9eef5;
+      background:#fff;
+      box-shadow:0 8px 20px rgba(33,74,91,.06);
+      text-align:center;
+      transition:.2s;
+    }
+
+    .contact-method:hover{transform:translateY(-2px);}
+    .contact-method .contact-icon{font-size:34px;margin-bottom:8px;}
+    .contact-method strong{display:block;color:var(--deep);font-size:18px;margin-bottom:4px;}
+    .contact-method small{display:block;color:var(--muted);font-size:13px;line-height:1.6;}
+    .contact-method.phone strong{color:var(--main-dark);font-size:22px;}
+    .contact-method.line{background:#f6fff8;border-color:#cfeeda;}
+    .contact-method.mail{background:#f8fdff;}
+
     .company{
       margin-top:28px;
       padding-top:24px;
@@ -519,6 +560,8 @@
       .icon-box{width:92px;height:92px;font-size:38px;}
       .contact-box{padding:32px 22px;}
       .contact-box h2{font-size:30px;}
+      .contact-actions{grid-template-columns:1fr;}
+      .contact-method{min-height:auto;}
     }
   </style>
 </head>
@@ -541,12 +584,12 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="eyebrow">DAILY CLEANING SERVICE</span>
-          <h1>毎日のキレイを、<br><span class="blue">もっと快適に。</span></h1>
+          <span class="eyebrow">CLINIC CLEANING SERVICE</span>
+          <h1>病院・クリニックの<br><span class="blue">毎日のキレイを。</span></h1>
           <p>
             毎日・週1回・2週間ごとなど、<br>
-            ご希望の頻度に合わせて定期的な清掃を承ります。<br>
-            トイレ・床・共用部など、日常的なお掃除はSAGAにおまかせください。
+            ご希望の頻度に合わせて院内の日常清掃を承ります。<br>
+            待合室・トイレ・床・洗面など、日常的なお掃除はSAGAにおまかせください。
           </p>
           <div class="hero-actions">
             <a href="#contact" class="btn btn-primary">お問い合わせ・お見積り</a>
@@ -562,8 +605,8 @@
               <div class="icon-box">🧽</div>
               <div class="icon-box">✨</div>
             </div>
-            <strong>日常的な清掃を、定期的に。</strong>
-            <small>施設・店舗・事業所など幅広く対応します。</small>
+            <strong>院内の日常清掃を、定期的に。</strong>
+            <small>病院・クリニック向けに対応します。</small>
           </div>
         </div>
       </div>
@@ -574,7 +617,7 @@
         <div class="section-head">
           <span class="mini">Problems</span>
           <h2>こんなお悩みありませんか？</h2>
-          <p>毎日使う場所だからこそ、定期的なお手入れが大切です。</p>
+          <p>患者様やスタッフが毎日使う院内だからこそ、定期的なお手入れが大切です。</p>
         </div>
 
         <div class="problem-grid">
@@ -582,12 +625,12 @@
           <div class="card problem-card"><div class="check">✓</div><div><strong>トイレや床をいつも清潔にしておきたい</strong></div></div>
           <div class="card problem-card"><div class="check">✓</div><div><strong>定期的に清掃してくれる業者を探している</strong></div></div>
           <div class="card problem-card"><div class="check">✓</div><div><strong>スタッフの清掃負担を減らしたい</strong></div></div>
-          <div class="card problem-card"><div class="check">✓</div><div><strong>お客様が利用する場所をきれいに保ちたい</strong></div></div>
+          <div class="card problem-card"><div class="check">✓</div><div><strong>患者様が利用する場所をきれいに保ちたい</strong></div></div>
           <div class="card problem-card"><div class="check">✓</div><div><strong>必要な場所だけお願いしたい</strong></div></div>
         </div>
 
         <div class="solution-banner">
-          そんな日常のお掃除を、SAGAがお手伝いします。
+          病院・クリニックの日常清掃を、SAGAがお手伝いします。
         </div>
       </div>
     </section>
@@ -596,8 +639,8 @@
       <div class="container">
         <div class="section-head">
           <span class="mini">Service</span>
-          <h2>日常清掃でできること</h2>
-          <p>建物やご利用状況に合わせて、必要な清掃内容をご提案します。</p>
+          <h2>病院・クリニックの日常清掃でできること</h2>
+          <p>院内のご利用状況に合わせて、必要な清掃内容をご提案します。</p>
         </div>
 
         <div class="service-grid">
@@ -621,8 +664,8 @@
 
           <div class="card service-card">
             <div class="emoji">🏢</div>
-            <h3>共用部清掃</h3>
-            <p>玄関・廊下・階段など、人の出入りが多い共用スペースを整えます。</p>
+            <h3>待合室・廊下清掃</h3>
+            <p>待合室・玄関・廊下など、患者様の目に触れやすい場所を整えます。</p>
           </div>
 
           <div class="card service-card">
@@ -633,8 +676,8 @@
 
           <div class="card service-card">
             <div class="emoji">✨</div>
-            <h3>その他の清掃</h3>
-            <p>「ここだけお願いしたい」など、建物やご希望に合わせてご相談いただけます。</p>
+            <h3>診察室まわり・その他</h3>
+            <p>診察室まわりやスタッフルームなど、清掃したい場所に合わせてご相談いただけます。</p>
           </div>
         </div>
       </div>
@@ -645,13 +688,13 @@
         <div class="section-head">
           <span class="mini">Frequency</span>
           <h2>ご希望のペースでお伺いします</h2>
-          <p>清掃頻度は、建物の利用状況や汚れ方に合わせてお選びいただけます。</p>
+          <p>清掃頻度は、患者様の来院状況や院内の汚れ方に合わせてお選びいただけます。</p>
         </div>
 
         <div class="frequency-wrap">
           <div class="frequency">
             <strong>毎日</strong>
-            <p>常に清潔な状態を保ちたい施設・事業所におすすめです。</p>
+            <p>来院数が多く、こまめに院内を整えたい病院・クリニックにおすすめです。</p>
           </div>
 
           <div class="frequency">
@@ -682,9 +725,10 @@
         </div>
 
         <div class="price-box">
-          <span class="price-label">日常清掃の料金目安</span>
+          <span class="price-label">病院・クリニックの日常清掃 料金目安</span>
           <p class="price-main">1時間 <strong>2,500円</strong>（税別）＋ 出張費～</p>
           <p class="price-note">※作業内容・作業時間・場所により料金は異なります。詳しい金額は、作業内容を確認後にご案内いたします。</p>
+          <p class="price-process">まずは現地を確認し、清掃内容に合わせてお見積りをご案内いたします。<br>お見積り金額をご確認・ご納得いただいたうえで、日常清掃をスタートします。</p>
         </div>
       </div>
     </section>
@@ -693,16 +737,16 @@
       <div class="container">
         <div class="section-head">
           <span class="mini">Places</span>
-          <h2>こんな場所の清掃に</h2>
+          <h2>院内のこんな場所を清掃します</h2>
         </div>
 
         <div class="place-grid">
-          <div class="card place-card"><span>💼</span><strong>オフィス</strong></div>
-          <div class="card place-card"><span>🏪</span><strong>店舗</strong></div>
-          <div class="card place-card"><span>🏥</span><strong>病院・クリニック</strong></div>
-          <div class="card place-card"><span>🏠</span><strong>マンション・アパート</strong></div>
-          <div class="card place-card"><span>🤝</span><strong>福祉施設</strong></div>
-          <div class="card place-card"><span>🏢</span><strong>その他事業所</strong></div>
+          <div class="card place-card"><span>🪑</span><strong>待合室</strong></div>
+          <div class="card place-card"><span>🚪</span><strong>玄関・廊下</strong></div>
+          <div class="card place-card"><span>🚻</span><strong>トイレ</strong></div>
+          <div class="card place-card"><span>🧼</span><strong>洗面・水まわり</strong></div>
+          <div class="card place-card"><span>🩺</span><strong>診察室まわり</strong></div>
+          <div class="card place-card"><span>👥</span><strong>スタッフルーム</strong></div>
         </div>
       </div>
     </section>
@@ -712,7 +756,7 @@
         <div class="section-head">
           <span class="mini">Flow</span>
           <h2>ご依頼までの流れ</h2>
-          <p>まずは清掃したい場所や頻度について、お気軽にご相談ください。</p>
+          <p>まずは院内で清掃したい場所やご希望の頻度について、お気軽にご相談ください。</p>
         </div>
 
         <div class="flow">
@@ -747,20 +791,39 @@
       <div class="container">
         <div class="contact-box">
           <span class="eyebrow">CONTACT</span>
-          <h2>日常のお掃除、おまかせください</h2>
+          <h2>病院・クリニックの日常清掃、おまかせください</h2>
           <p>
-            清掃場所や頻度がまだ決まっていなくても大丈夫です。<br>
+            院内の清掃場所や頻度がまだ決まっていなくても大丈夫です。<br>
             ご希望をお聞きしながら、清掃内容をご提案します。
           </p>
 
           <div class="contact-example">
-            「トイレだけお願いしたい」<br>
+            「待合室とトイレだけお願いしたい」<br>
             「週に1回お願いしたい」<br>
             「どのくらいの頻度がいいか分からない」<br>
             そんなご相談もお気軽にどうぞ。
           </div>
 
-          <a href="mailto:sagakochi@gmail.com?subject=日常清掃について" class="btn btn-primary">お問い合わせはこちら</a>
+          <div class="contact-actions">
+            <a href="https://lin.ee/zoKw0qA" class="contact-method line" target="_blank" rel="noopener">
+              <span class="contact-icon">LINE</span>
+              <strong>LINEでお問い合わせ</strong>
+              <small>公式LINEからお気軽にご相談ください</small>
+            </a>
+
+            <a href="tel:0120115134" class="contact-method phone">
+              <span class="contact-icon">☎</span>
+              <small>フリーダイヤル</small>
+              <strong>0120-115-134</strong>
+              <small>受付時間 9:00〜18:00</small>
+            </a>
+
+            <a href="mailto:sagakochi@gmail.com?subject=%E6%97%A5%E5%B8%B8%E6%B8%85%E6%8E%83%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" class="contact-method mail">
+              <span class="contact-icon">✉</span>
+              <strong>メールでお問い合わせ</strong>
+              <small>sagakochi@gmail.com</small>
+            </a>
+          </div>
 
           <div class="company">
             <strong>株式会社SAGA</strong><br>
